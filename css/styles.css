@@ -31,6 +31,8 @@ ol {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 img {
     display: block;
@@ -78,15 +80,15 @@ body{
        
     }
     .page-header{
-        display: flex;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        
         border-bottom: 1px solid #e7e9fc
         
     }
     .menu{
         display: flex;
         gap: 40px;
+        padding-top: 24px;
+        padding-bottom: 24px;
 
     }
     .menu-item{
@@ -96,8 +98,7 @@ body{
    .main-conteiner{
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-        padding-bottom: 24px;
+   
 
    }
     .studio{
@@ -144,14 +145,14 @@ body{
 /* =======Hero======= */
 .main-title{
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 
 }
 .title{
         max-width: 496px;
         margin-left: auto;
-        margin-right: auto;
-        padding-top: 188px;
-        padding-bottom: 292px;
+        margin-right: auto;        
         text-align: center;
         font-family: 'Roboto', sans-serif;
         font-size: 56px;
@@ -167,7 +168,6 @@ body{
         min-width: 169px;        
         gap: 10px;
         display: block;
-
         height: 56px;
         border: none;
         border-radius: 4px;
@@ -208,7 +208,7 @@ body{
     width: calc((100% - 72px) / 4);
 }
 .strengths-name{
-    margin-bottom: 8px;
+margin-bottom: 8px;
 font-size: 20px;
 font-weight: 500;
 line-height: 1.2; 
@@ -223,6 +223,11 @@ color: var(--NAVY-BLUE, #2E2F42);
     letter-spacing: 0.02em;
     color: var(--SLATE, #434455);
 }
+
+
+/* =======Team========= */
+
+
 .team{
     
     background-color: #F4F4FD;
@@ -233,13 +238,9 @@ color: var(--NAVY-BLUE, #2E2F42);
     gap: 24px;
     font-family: 'Roboto', sans-serif;
 }
-.acquaintance{
-    
-    
 
-}
 .group{
-    margin-bottom: 72px;
+        margin-bottom: 72px;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
@@ -248,51 +249,60 @@ color: var(--NAVY-BLUE, #2E2F42);
         text-transform: capitalize;
         color: var(--NAVY-BLUE, #2E2F42);
 }
-.name{
+.acquaintance{
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+.name{
+    
     padding-top: 32px;
     padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
 }
 
 .section-heading{
-    margin-bottom: 8px
+        margin-bottom: 8px;
         text-align: center;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
-        letter-spacing: 0.02em;
+        letter-spacing:0.02em;
         color: #2E2F42;
         background:  #FFF;
+
 }
 .section-description{
-    padding-bottom: 32px;
-    text-align: center;
-        text-align: center;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
         background: #FFF;
+        text-align: center;
 }
+
+
+
+/* ======Team======== */
 .portfolio{
     font-family: 'Roboto', sans-serif;
    margin-bottom: 72px;
+padding-top: 120px;
+padding-bottom: 120px;
 
 }
 .portfolio-title{
-    margin-bottom: 72px;
+        margin-bottom: 72px;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        text-transform: capitalize;
         color: #2E2F42;
 }
 .finished-projects{
 width: calc((100% - 48px) / 3);}
+row-gap: 48px;
 .portfolio-product{
 
     margin-bottom: 8px;
@@ -304,7 +314,6 @@ width: calc((100% - 48px) / 3);}
         background-color: #FFFFFF;
 }
 .portfolio-projects{
-    row-gap: 48px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -320,16 +329,21 @@ border: 1px solid #e7e9fc;
 border-top: none;
 }
 .portfolio-direction{
-    
+
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--SLATE, #434455);
 }
+
+
+
+/* =====Footer======= */
 .footer{
     background-color: #2E2F42;
-    padding-top: 100px
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .logo{
     display: inline-block;
@@ -345,7 +359,7 @@ border-top: none;
         text-decoration: none;
 }
 .marketing{
-    max-width: 264px
+        max-width: 264px;
         font-family: Roboto;
         font-size: 16px;
         font-weight: 400;
