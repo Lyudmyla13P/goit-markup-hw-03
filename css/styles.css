@@ -1,4 +1,40 @@
 /* =======Common styles======= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset (100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+.container{
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    display: block;
+}
 .list{
     list-style-type: none;
 }
@@ -17,10 +53,15 @@ body{
     color: #434455;
     background-color: #FFFFFF;
 }
+.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 /* =======Header styles======= */
 .logo{
-    
-        font-family: 'Raleway', sans-serif;
+
+       margin-right: 76px; 
+    font-family: 'Raleway', sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height:1.17;
@@ -32,6 +73,24 @@ body{
     .logo:focus{
         color: #404bbf;
     }
+    .page-navigation{
+        display: flex;
+       
+    }
+    .page-header{
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .menu{
+        display: flex;
+        column-gap: 40px;
+    }
+   .main-conteiner{
+    display: flex;
+    justify-content: space-between;
+
+   }
     .studio{
         color: #2e2f42;
     }
@@ -50,26 +109,36 @@ body{
 /* =======Header styles======= */
 /*======== Adsress styles====== */
 .adress{
+    gap: 40px;
+    display: flex;
     font-style: normal
+    
 }
 .adress-link{
-
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
 }
 .adress-link:hover,
 .adress-link:focus{
     color: #404BBF;
 }
+/* =======Hero======= */
 .main-title{
     background-color: #2e2f42;
+
 }
 .title{
-    
+    width: 496px;   
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 188px;
+    padding-bottom: 292px;
         text-align: center;
         font-family: 'Roboto', sans-serif;
         font-size: 56px;
@@ -80,6 +149,7 @@ body{
         background: #2E2F42;
 }
 .order-service{
+   
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
@@ -92,10 +162,15 @@ body{
 .order-service:focus
 {
     background-color: #404BBF;
+    
 }
 .page-navigation:hover,
 .page-navigation:focus{
     color: page-navigation;
+}
+.strengths-item{
+    display: flex;
+    column-gap: 24px;
 }
 .strengths{
     font-family: 'Roboto', sans-serif;
@@ -116,16 +191,20 @@ color: var(--NAVY-BLUE, #2E2F42);
     color: var(--SLATE, #434455);
 }
 .team{
+    
     background-color: #F4F4FD;
 }
 .team-member{
-    background-color: #FFFFFF;
+    display: flex;
+    column-gap: 24px;
     font-family: 'Roboto', sans-serif;
 }
 .acquaintance{
-    background-color: #FFFFFF;
+    
+    width: calc(( 100%- 3* 24px) /4);
 }
 .group{
+    margin-bottom: 72px;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
@@ -135,7 +214,8 @@ color: var(--NAVY-BLUE, #2E2F42);
         color: var(--NAVY-BLUE, #2E2F42);
 }
 .section-heading{
-    
+    padding-top: 32px;
+    padding-bottom: 8px;
         text-align: center;
         font-size: 20px;
         font-weight: 500;
@@ -145,7 +225,7 @@ color: var(--NAVY-BLUE, #2E2F42);
         background:  #FFF;
 }
 .section-description{
-    
+    padding-bottom: 32px;
         text-align: center;
         font-size: 16px;
         font-weight: 400;
@@ -158,6 +238,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     font-family: 'Roboto', sans-serif;
 }
 .portfolio-title{
+    margin-bottom: 72px;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
@@ -166,16 +247,25 @@ color: var(--NAVY-BLUE, #2E2F42);
         text-transform: capitalize;
         color: #2E2F42;
 }
+.finished-projects{
+    width: calc((100 - 4 * 24) /6)
+}
 .portfolio-product{
-    
+    margin-top: 32px;
+    margin-bottom: 8px;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
 }
+.portfolio-projects{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
 .portfolio-direction{
-    
+    margin-bottom: 32px;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
