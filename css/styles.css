@@ -58,8 +58,7 @@ body{
 
 /* =======Header styles======= */
 .logo{
-        padding-top: 24px;
-        padding-bottom: 24px;
+      
        margin-right: 76px; 
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
@@ -76,6 +75,8 @@ body{
     .page-navigation{
         display: flex;
         align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
 
        
     }
@@ -117,6 +118,9 @@ body{
     color:#404bbf;
 }
 /* =======Header styles======= */
+
+
+
 /*======== Adsress styles====== */
 .address{
     padding-top: 24px;
@@ -331,10 +335,10 @@ color: var(--NAVY-BLUE, #2E2F42);
 
 .app{
 
-padding: 32px 16px;
-border: 1px solid #e7e9fc;
-border-top: none;
-margin-bottom: 8px
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px
 }
 .portfolio-direction{
 
@@ -345,7 +349,7 @@ margin-bottom: 8px
         color: var(--SLATE, #434455);
 }
 
-
+/* ======Portfolio====== */
 
 /* =====Footer======= */
 .footer{
@@ -353,10 +357,7 @@ margin-bottom: 8px
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.logo{
-    display: inline-block;
-    margin-bottom: 16px;
-}
+
 .logo-link{
         font-size: 18px;
         font-weight: 700;
@@ -365,6 +366,8 @@ margin-bottom: 8px
         text-transform: uppercase;
         color: #4d5ae5;
         text-decoration: none;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 .marketing{
         max-width: 264px;
