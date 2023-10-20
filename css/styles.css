@@ -106,7 +106,7 @@ body{
         color: #2e2f42;
     }
 .menu-link{
-    
+    padding: 24px 0;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -309,14 +309,13 @@ color: var(--NAVY-BLUE, #2E2F42);
         color: #2E2F42;
 }
 .finished-projects{
-
-    row-gap: 48px;
-    width: calc((100% - 48px) / 3); 
+    
+    width: calc((100% - 48px) / 3);
 }
     
 .portfolio-product{
 
-
+    margin-bottom: 8px;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
@@ -325,6 +324,7 @@ color: var(--NAVY-BLUE, #2E2F42);
         background-color: #FFFFFF;
 }
 .portfolio-projects{
+    row-gap: 48px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
